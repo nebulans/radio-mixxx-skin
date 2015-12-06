@@ -182,22 +182,6 @@
                                        </WidgetGroup>
                                     </Children>
                                 </WidgetGroup>
-                                <WidgetGroup>
-                                    <ObjectName>Crossfader</ObjectName>
-                                    <Layout>horizontal</Layout>
-                                    <SizePolicy>me,min</SizePolicy>
-                                    <Children>
-                                        <SliderComposed>
-                                            <TooltipId>crossfader</TooltipId>
-                                            <Handle>knob_crossfader.png</Handle>
-                                            <Slider>slider_crossfader.png</Slider>
-                                            <Horizontal>true</Horizontal>
-                                            <Connection>
-                                                <ConfigKey>[Master],crossfader</ConfigKey>
-                                            </Connection>
-                                        </SliderComposed>
-                                    </Children>
-                                </WidgetGroup>
                             </Children>
                           </WidgetGroup>
                           <WidgetGroup>
@@ -340,19 +324,6 @@
                             <ConfigKey>[Master],show_4decks</ConfigKey>
                             <BindProperty>visible</BindProperty>
                         </Connection>
-                    </WidgetGroup>
-                    <WidgetGroup>
-                        <ObjectName>AlignRightBottom</ObjectName>
-                        <Layout>horizontal</Layout>
-                        <SizePolicy>min,f</SizePolicy>
-                        <Children>
-                            <WidgetGroup>
-                                <Layout>horizontal</Layout>
-                                <SizePolicy>f,f</SizePolicy>
-                                <Size>103,40</Size>
-                                <BackPath>style/mixxx_logo.png</BackPath>
-                            </WidgetGroup>
-                        </Children>
                     </WidgetGroup>
                 </Children>
             </WidgetGroup>

@@ -1,0 +1,26 @@
+<Template>
+    <WidgetGroup>
+        <ObjectName>GuiToggleContainerPadLeft</ObjectName>
+        <Layout>vertical</Layout>
+        <SizePolicy>min,min</SizePolicy>
+        <Children>
+            <PushButton>
+                <TooltipId>pfl</TooltipId>
+                <NumberStates>2</NumberStates>
+                <State>
+                    <Number>0</Number>
+                    <Pressed>btn_pfl1_down.png</Pressed>
+                    <Unpressed>btn_pfl1.png</Unpressed>
+                </State>
+                <State>
+                    <Number>1</Number>
+                    <Pressed>btn_pfl1_overdown.png</Pressed>
+                    <Unpressed>btn_pfl1_over.png</Unpressed>
+                </State>
+                <Connection>
+                    <ConfigKey>[Microphone<Variable name="micnum"/>],pfl</ConfigKey>
+                </Connection>
+            </PushButton>
+        </Children>
+    </WidgetGroup>
+</Template>

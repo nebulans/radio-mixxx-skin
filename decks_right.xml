@@ -48,6 +48,7 @@
                           <BindProperty>visible</BindProperty>
                       </Connection>
                     </WidgetGroup>
+                    <Template src="skin:mini_aux.xml" />
                     <WidgetGroup>
                       <Layout>horizontal</Layout>
                       <SizePolicy>me,me</SizePolicy>

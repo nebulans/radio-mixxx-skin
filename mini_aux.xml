@@ -1,0 +1,35 @@
+<Template>
+    <!-- This outer widget group makes the PreviewDeck borders work correctly -->
+    <WidgetGroup>
+        <Layout>vertical</Layout>
+        <SizePolicy>me,min</SizePolicy>
+        <MaximumSize>,80</MaximumSize>
+        <Children>
+            <WidgetGroup>
+                <ObjectName>MiniAux</ObjectName>
+                <Layout>horizontal</Layout>
+                <SizePolicy>min, min</SizePolicy>
+                <MinimumSize>100,40</MinimumSize>
+                <MaximumSize>,60</MaximumSize>
+                <Children>
+                    <Template src="skin:microphone.xml">
+                        <SetVariable name="mic1hack">1</SetVariable>
+                    </Template>
+                    <Template src="skin:microphone.xml">
+                        <SetVariable name="micnum">2</SetVariable>
+                    </Template>
+                    <Template src="skin:microphone.xml">
+                        <SetVariable name="micnum">3</SetVariable>
+                    </Template>
+                    <Template src="skin:microphone.xml">
+                        <SetVariable name="micnum">4</SetVariable>
+                    </Template>
+                </Children>
+            </WidgetGroup>
+        </Children>
+        <Connection>
+            <ConfigKey>[Microphone],show_microphone</ConfigKey>
+            <BindProperty>visible</BindProperty>
+        </Connection>
+    </WidgetGroup>
+</Template>

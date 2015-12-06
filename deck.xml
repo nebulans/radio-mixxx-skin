@@ -15,7 +15,7 @@
                        <ObjectName>RateAdjust</ObjectName>
                        <Layout>vertical</Layout>
                        <SizePolicy>min,min</SizePolicy>
-	                   <Children>
+                       <Children>
                            <WidgetGroup>
                                <Layout>horizontal</Layout>
                                <SizePolicy>min,min</SizePolicy>
@@ -145,111 +145,111 @@
                               </Channel>
                               <NumberOfDigits>2</NumberOfDigits>
                           </NumberRate>
-			            </Children>
-		            </WidgetGroup>
+                        </Children>
+                    </WidgetGroup>
                     <WidgetGroup>
                         <SizePolicy>min,min</SizePolicy>
                         <Layout>horizontal</Layout>
                         <ObjectName>RateSlider</ObjectName>
                         <Children>
-        		            <SliderComposed>
-        		                <TooltipId>rate</TooltipId>
-        		                <Handle>knob_pitch1.png</Handle>
-        		                <Slider>slider_pitch1.png</Slider>
-        		                <Horizontal>false</Horizontal>
-        		                <Connection>
-        		                    <ConfigKey>[Channel<Variable name="channum" />],rate</ConfigKey>
-        		                </Connection>
-        		            </SliderComposed>
+                            <SliderComposed>
+                                <TooltipId>rate</TooltipId>
+                                <Handle>knob_pitch1.png</Handle>
+                                <Slider>slider_pitch1.png</Slider>
+                                <Horizontal>false</Horizontal>
+                                <Connection>
+                                    <ConfigKey>[Channel<Variable name="channum" />],rate</ConfigKey>
+                                </Connection>
+                            </SliderComposed>
                         </Children>
                     </WidgetGroup>
-		            <WidgetGroup>
-		                <ObjectName>RateButtons</ObjectName>
-		                <Layout>vertical</Layout>
-		                <SizePolicy>min,min</SizePolicy>
-		                <Children>
-		                    <WidgetGroup>
-		                        <ObjectName>RatePermButtons</ObjectName>
-		                        <Layout>horizontal</Layout>
-		                        <Children>
-		                            <PushButton>
-		                                <TooltipId>rate_perm_down_rate_perm_down_small</TooltipId>
-		                                <NumberStates>1</NumberStates>
-		                                <State>
-		                                    <Number>0</Number>
-		                                    <Pressed>btn_pitch_down1_overdown.png</Pressed>
-		                                    <Unpressed>btn_pitch_down1.png</Unpressed>
-		                                </State>
-		                                <Connection>
-		                                    <ConfigKey>[Channel<Variable name="channum" />],rate_perm_down</ConfigKey>
-		                                    <ButtonState>LeftButton</ButtonState>
-		                                </Connection>
-		                                <Connection>
-		                                    <ConfigKey>[Channel<Variable name="channum" />],rate_perm_down_small</ConfigKey>
-		                                    <ButtonState>RightButton</ButtonState>
-		                                </Connection>
-		                            </PushButton>
-		                            <PushButton>
-		                                <TooltipId>rate_perm_up_rate_perm_up_small</TooltipId>
-		                                <NumberStates>1</NumberStates>
-		                                <State>
-		                                    <Number>0</Number>
-		                                    <Pressed>btn_pitch_up1_overdown.png</Pressed>
-		                                    <Unpressed>btn_pitch_up1.png</Unpressed>
-		                                </State>
-		                                <Connection>
-		                                    <ConfigKey>[Channel<Variable name="channum" />],rate_perm_up</ConfigKey>
-		                                    <ButtonState>LeftButton</ButtonState>
-		                                </Connection>
-		                                <Connection>
-		                                    <ConfigKey>[Channel<Variable name="channum" />],rate_perm_up_small</ConfigKey>
-		                                    <ButtonState>RightButton</ButtonState>
-		                                </Connection>
-		                            </PushButton>
-		                        </Children>
-		                    </WidgetGroup>
-		                    <WidgetGroup>
-		                        <ObjectName>RateTempButtons</ObjectName>
-		                        <Layout>horizontal</Layout>
-		                        <Children>
-		                            <PushButton>
-		                                <TooltipId>rate_temp_down_rate_temp_down_small</TooltipId>
-		                                <NumberStates>1</NumberStates>
-		                                <State>
-		                                    <Number>0</Number>
-		                                    <Pressed>btn_nudge_down1_overdown.png</Pressed>
-		                                    <Unpressed>btn_nudge_down1.png</Unpressed>
-		                                </State>
-		                                <Connection>
-		                                    <ConfigKey>[Channel<Variable name="channum" />],rate_temp_down</ConfigKey>
-		                                    <ButtonState>LeftButton</ButtonState>
-		                                </Connection>
-		                                <Connection>
-		                                    <ConfigKey>[Channel<Variable name="channum" />],rate_temp_down_small</ConfigKey>
-		                                    <ButtonState>RightButton</ButtonState>
-		                                </Connection>
-		                            </PushButton>
-		                            <PushButton>
-		                                <TooltipId>rate_temp_up_rate_temp_up_small</TooltipId>
-		                                <NumberStates>1</NumberStates>
-		                                <State>
-		                                    <Number>0</Number>
-		                                    <Pressed>btn_nudge_up1_overdown.png</Pressed>
-		                                    <Unpressed>btn_nudge_up1.png</Unpressed>
-		                                </State>
-		                                <Connection>
-		                                    <ConfigKey>[Channel<Variable name="channum" />],rate_temp_up</ConfigKey>
-		                                    <ButtonState>LeftButton</ButtonState>
-		                                </Connection>
-		                                <Connection>
-		                                    <ConfigKey>[Channel<Variable name="channum" />],rate_temp_up_small</ConfigKey>
-		                                    <ButtonState>RightButton</ButtonState>
-		                                </Connection>
-		                            </PushButton>
-		                        </Children>
-		                    </WidgetGroup>
-		                </Children>
-		            </WidgetGroup>
+                    <WidgetGroup>
+                        <ObjectName>RateButtons</ObjectName>
+                        <Layout>vertical</Layout>
+                        <SizePolicy>min,min</SizePolicy>
+                        <Children>
+                            <WidgetGroup>
+                                <ObjectName>RatePermButtons</ObjectName>
+                                <Layout>horizontal</Layout>
+                                <Children>
+                                    <PushButton>
+                                        <TooltipId>rate_perm_down_rate_perm_down_small</TooltipId>
+                                        <NumberStates>1</NumberStates>
+                                        <State>
+                                            <Number>0</Number>
+                                            <Pressed>btn_pitch_down1_overdown.png</Pressed>
+                                            <Unpressed>btn_pitch_down1.png</Unpressed>
+                                        </State>
+                                        <Connection>
+                                            <ConfigKey>[Channel<Variable name="channum" />],rate_perm_down</ConfigKey>
+                                            <ButtonState>LeftButton</ButtonState>
+                                        </Connection>
+                                        <Connection>
+                                            <ConfigKey>[Channel<Variable name="channum" />],rate_perm_down_small</ConfigKey>
+                                            <ButtonState>RightButton</ButtonState>
+                                        </Connection>
+                                    </PushButton>
+                                    <PushButton>
+                                        <TooltipId>rate_perm_up_rate_perm_up_small</TooltipId>
+                                        <NumberStates>1</NumberStates>
+                                        <State>
+                                            <Number>0</Number>
+                                            <Pressed>btn_pitch_up1_overdown.png</Pressed>
+                                            <Unpressed>btn_pitch_up1.png</Unpressed>
+                                        </State>
+                                        <Connection>
+                                            <ConfigKey>[Channel<Variable name="channum" />],rate_perm_up</ConfigKey>
+                                            <ButtonState>LeftButton</ButtonState>
+                                        </Connection>
+                                        <Connection>
+                                            <ConfigKey>[Channel<Variable name="channum" />],rate_perm_up_small</ConfigKey>
+                                            <ButtonState>RightButton</ButtonState>
+                                        </Connection>
+                                    </PushButton>
+                                </Children>
+                            </WidgetGroup>
+                            <WidgetGroup>
+                                <ObjectName>RateTempButtons</ObjectName>
+                                <Layout>horizontal</Layout>
+                                <Children>
+                                    <PushButton>
+                                        <TooltipId>rate_temp_down_rate_temp_down_small</TooltipId>
+                                        <NumberStates>1</NumberStates>
+                                        <State>
+                                            <Number>0</Number>
+                                            <Pressed>btn_nudge_down1_overdown.png</Pressed>
+                                            <Unpressed>btn_nudge_down1.png</Unpressed>
+                                        </State>
+                                        <Connection>
+                                            <ConfigKey>[Channel<Variable name="channum" />],rate_temp_down</ConfigKey>
+                                            <ButtonState>LeftButton</ButtonState>
+                                        </Connection>
+                                        <Connection>
+                                            <ConfigKey>[Channel<Variable name="channum" />],rate_temp_down_small</ConfigKey>
+                                            <ButtonState>RightButton</ButtonState>
+                                        </Connection>
+                                    </PushButton>
+                                    <PushButton>
+                                        <TooltipId>rate_temp_up_rate_temp_up_small</TooltipId>
+                                        <NumberStates>1</NumberStates>
+                                        <State>
+                                            <Number>0</Number>
+                                            <Pressed>btn_nudge_up1_overdown.png</Pressed>
+                                            <Unpressed>btn_nudge_up1.png</Unpressed>
+                                        </State>
+                                        <Connection>
+                                            <ConfigKey>[Channel<Variable name="channum" />],rate_temp_up</ConfigKey>
+                                            <ButtonState>LeftButton</ButtonState>
+                                        </Connection>
+                                        <Connection>
+                                            <ConfigKey>[Channel<Variable name="channum" />],rate_temp_up_small</ConfigKey>
+                                            <ButtonState>RightButton</ButtonState>
+                                        </Connection>
+                                    </PushButton>
+                                </Children>
+                            </WidgetGroup>
+                        </Children>
+                    </WidgetGroup>
                     <WidgetGroup>
                         <ObjectName>SyncControls</ObjectName>
                         <Layout>vertical</Layout>
@@ -300,39 +300,39 @@
                             </PushButton> -->
                         </Children>
                     </WidgetGroup>
-	            </Children>
+                </Children>
             </WidgetGroup>
-			<WidgetGroup>  <!-- Deck Channel1 -->
-				<ObjectName>Deck<Variable name="channum" /></ObjectName>
-				<SizePolicy>me,min</SizePolicy>
-				<MinimumSize>340,-1</MinimumSize>
-				<Layout>vertical</Layout>
-				<Children>
-				    <WidgetGroup>
-		                <ObjectName>VinylStatusTop<Variable name="channum" /></ObjectName>
-		                <SizePolicy>me,min</SizePolicy>
-		                <MinimumSize>2,10</MinimumSize>
-		                <Layout>horizontal</Layout>
-		                <Children>
-		                    <StatusLight>
-		                        <Size>2me,10f</Size>
-		                        <TooltipId>vinylcontrol_status</TooltipId>
-		                        <NumberPos>3</NumberPos>
-		                        <PathStatusLight scalemode="STRETCH">btn_vinylcontrol_indicator_horizontal1.png</PathStatusLight>
-		                        <PathStatusLight2 scalemode="STRETCH">btn_vinylcontrol_indicator_horizontal2.png</PathStatusLight2>
-		                        <PathStatusLight3 scalemode="STRETCH">btn_vinylcontrol_indicator_horizontal3.png</PathStatusLight3>
-		                        <Connection>
-		                            <ConfigKey>[Channel<Variable name="channum"/>],vinylcontrol_status</ConfigKey>
-		                        </Connection>
-		                    </StatusLight>
-		                </Children>
-		            </WidgetGroup>
-					<Template src="skin:deck_row_1.xml" />
-					<Template src="skin:deck_row_2_3_4.xml" />
-					<Template src="skin:deck_row_5.xml" />
-					<Template src="skin:deck_buttons.xml" />
-				</Children>
-			</WidgetGroup> <!-- /Deck Channel1 -->
-		</Children>
-	</WidgetGroup>
+            <WidgetGroup>  <!-- Deck Channel1 -->
+                <ObjectName>Deck<Variable name="channum" /></ObjectName>
+                <SizePolicy>me,min</SizePolicy>
+                <MinimumSize>340,-1</MinimumSize>
+                <Layout>vertical</Layout>
+                <Children>
+                    <WidgetGroup>
+                        <ObjectName>VinylStatusTop<Variable name="channum" /></ObjectName>
+                        <SizePolicy>me,min</SizePolicy>
+                        <MinimumSize>2,10</MinimumSize>
+                        <Layout>horizontal</Layout>
+                        <Children>
+                            <StatusLight>
+                                <Size>2me,10f</Size>
+                                <TooltipId>vinylcontrol_status</TooltipId>
+                                <NumberPos>3</NumberPos>
+                                <PathStatusLight scalemode="STRETCH">btn_vinylcontrol_indicator_horizontal1.png</PathStatusLight>
+                                <PathStatusLight2 scalemode="STRETCH">btn_vinylcontrol_indicator_horizontal2.png</PathStatusLight2>
+                                <PathStatusLight3 scalemode="STRETCH">btn_vinylcontrol_indicator_horizontal3.png</PathStatusLight3>
+                                <Connection>
+                                    <ConfigKey>[Channel<Variable name="channum"/>],vinylcontrol_status</ConfigKey>
+                                </Connection>
+                            </StatusLight>
+                        </Children>
+                    </WidgetGroup>
+                    <Template src="skin:deck_row_1.xml" />
+                    <Template src="skin:deck_row_2_3_4.xml" />
+                    <Template src="skin:deck_row_5.xml" />
+                    <Template src="skin:deck_buttons.xml" />
+                </Children>
+            </WidgetGroup> <!-- /Deck Channel1 -->
+        </Children>
+    </WidgetGroup>
 </Template>

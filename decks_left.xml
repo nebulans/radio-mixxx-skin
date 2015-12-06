@@ -10,13 +10,13 @@
                 <SizePolicy>me,min</SizePolicy>
                 <Children>
                     <Template src="skin:deck.xml">
-        	            <SetVariable name="channum">1</SetVariable>
+                        <SetVariable name="channum">1</SetVariable>
                         <SetVariable name="signal_color">#E7C413</SetVariable>
                         <SetVariable name="SignalBgColor">#2f290a</SetVariable>
                         <SetVariable name="SignalRGBLowColor">#ff2a00</SetVariable>
                         <SetVariable name="SignalRGBMidColor">#33f600</SetVariable>
                         <SetVariable name="SignalRGBHighColor">#332acc</SetVariable>
-        	          </Template>
+                      </Template>
                     <WidgetGroup>
                         <ObjectName>Deck</ObjectName>
                         <Layout>horizontal</Layout>

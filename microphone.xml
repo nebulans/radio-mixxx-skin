@@ -1,22 +1,22 @@
 <Template>
-	<WidgetGroup>
+    <WidgetGroup>
     <ObjectName>MicBorder</ObjectName>
     <Layout>horizontal</Layout>
     <Children>
       <WidgetGroup>
         <ObjectName>MicInterior</ObjectName>
         <BackPath>background_tile.png</BackPath>
-    		<Layout>vertical</Layout>
-    		<SizePolicy>min,min</SizePolicy>
+            <Layout>vertical</Layout>
+            <SizePolicy>min,min</SizePolicy>
         <MinimumSize>100, 64</MinimumSize>
-    		<Children>
+            <Children>
           <Label>
             <ObjectName>MicSubTitle</ObjectName>
             <Text>Mic <Variable name="mic1hack"/><Variable name="micnum"/></Text>
           </Label>
-    			<!-- To make each widget centered, we have to put them each in their own
-    				widgetgroup. -->
-    			<WidgetGroup>
+                <!-- To make each widget centered, we have to put them each in their own
+                    widgetgroup. -->
+                <WidgetGroup>
             <Layout>horizontal</Layout>
             <SizePolicy>min,max</SizePolicy>
             <MaximumSize>-1, 26</MaximumSize>
@@ -76,12 +76,12 @@
                   </PushButton>
                 </Children>
               </WidgetGroup>
-    				</Children>
-    			</WidgetGroup>
-    			<WidgetGroup>
-    				<Layout>horizontal</Layout>
-    				<SizePolicy>min,min</SizePolicy>
-    				<Children>
+                    </Children>
+                </WidgetGroup>
+                <WidgetGroup>
+                    <Layout>horizontal</Layout>
+                    <SizePolicy>min,min</SizePolicy>
+                    <Children>
               <VuMeter>
                 <TooltipId>microphone_VuMeter</TooltipId>
                 <MinimumSize>64,4</MinimumSize>
@@ -94,38 +94,38 @@
                 <PeakHoldTime>500</PeakHoldTime>
                 <PeakFallTime>50</PeakFallTime>
                 <PeakFallStep>2</PeakFallStep>
-    						<Connection>
-    							<ConfigKey>[Microphone<Variable name="micnum"/>],VuMeter</ConfigKey>
-    						</Connection>
+                            <Connection>
+                                <ConfigKey>[Microphone<Variable name="micnum"/>],VuMeter</ConfigKey>
+                            </Connection>
               </VuMeter>
-    					<PushButton>
-    						<TooltipId>orientation</TooltipId>
-    						<Style></Style>
-    						<NumberStates>3</NumberStates>
-    						<State>
-    							<Number>0</Number>
-    							<Pressed>btn_orientation_microphone_left_over.png</Pressed>
-    							<Unpressed>btn_orientation_microphone_left_over.png</Unpressed>
-    						</State>
-    						<State>
-    							<Number>1</Number>
-    							<Pressed>btn_orientation_microphone_master.png</Pressed>
-    							<Unpressed>btn_orientation_microphone_master.png</Unpressed>
-    						</State>
-    						<State>
-    							<Number>2</Number>
-    							<Pressed>btn_orientation_microphone_right_over.png</Pressed>
-    							<Unpressed>btn_orientation_microphone_right_over.png</Unpressed>
-    						</State>
-    						<Connection>
-    							<ConfigKey>[Microphone<Variable name="micnum"/>],orientation</ConfigKey>
-    							<ButtonState>LeftButton</ButtonState>
-    						</Connection>
-    					</PushButton>
-    				</Children>
-    			</WidgetGroup>
-    		</Children>
-    	</WidgetGroup>
+                        <PushButton>
+                            <TooltipId>orientation</TooltipId>
+                            <Style></Style>
+                            <NumberStates>3</NumberStates>
+                            <State>
+                                <Number>0</Number>
+                                <Pressed>btn_orientation_microphone_left_over.png</Pressed>
+                                <Unpressed>btn_orientation_microphone_left_over.png</Unpressed>
+                            </State>
+                            <State>
+                                <Number>1</Number>
+                                <Pressed>btn_orientation_microphone_master.png</Pressed>
+                                <Unpressed>btn_orientation_microphone_master.png</Unpressed>
+                            </State>
+                            <State>
+                                <Number>2</Number>
+                                <Pressed>btn_orientation_microphone_right_over.png</Pressed>
+                                <Unpressed>btn_orientation_microphone_right_over.png</Unpressed>
+                            </State>
+                            <Connection>
+                                <ConfigKey>[Microphone<Variable name="micnum"/>],orientation</ConfigKey>
+                                <ButtonState>LeftButton</ButtonState>
+                            </Connection>
+                        </PushButton>
+                    </Children>
+                </WidgetGroup>
+            </Children>
+        </WidgetGroup>
     </Children>
   </WidgetGroup>
 </Template>

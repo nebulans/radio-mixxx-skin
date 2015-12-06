@@ -14,13 +14,6 @@
                         <Children/>
                     </WidgetGroup>
                     <!-- When any tab is hidden, go back to the first (empty) page. -->
-                    <WidgetGroup trigger="[Microphone],show_microphone" on_hide_select="0">
-                        <Layout>vertical</Layout>
-                        <SizePolicy>me,min</SizePolicy>
-                        <Children>
-                            <Template src="skin:microphone_rack.xml"/>
-                        </Children>
-                    </WidgetGroup>
                     <WidgetGroup trigger="[EffectRack1],show" on_hide_select="0">
                         <Layout>vertical</Layout>
                         <SizePolicy>me,min</SizePolicy>

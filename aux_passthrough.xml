@@ -6,51 +6,20 @@
       <WidgetGroup>
         <ObjectName>MicInterior</ObjectName>
         <BackPath>background_tile.png</BackPath>
-        <Layout>vertical</Layout>
+        <Layout>horizontal</Layout>
         <SizePolicy>min,min</SizePolicy>
-        <MinimumSize>75, 50</MinimumSize>
+        <MinimumSize>60, 45</MinimumSize>
         <Children>
-          <Label>
-            <ObjectName>MicSubTitle</ObjectName>
-            <Text>Aux <Variable name="auxnum"/></Text>
-          </Label>
-          <!-- To make each widget centered, we have to put them each in their own
-            widgetgroup. -->
           <WidgetGroup>
-            <Layout>horizontal</Layout>
+            <Layout>vertical</Layout>
             <SizePolicy>min,max</SizePolicy>
-            <MaximumSize>-1, 26</MaximumSize>
+            <MaximumSize>-1, -1</MaximumSize>
             <Children>
-              <Template src="skin:knob_sized_textless.xml">
-                 <SetVariable name="width">28</SetVariable>
-                 <SetVariable name="height">24</SetVariable>
-                 <SetVariable name="group">[Auxiliary<Variable name="auxnum"/>]</SetVariable>
-                 <SetVariable name="control">pregain</SetVariable>
-              </Template>
-              <WidgetGroup>
-                <ObjectName>GuiToggleContainerPadLeft</ObjectName>
-                <Layout>vertical</Layout>
-                <SizePolicy>min,min</SizePolicy>
-                <Children>
-                  <PushButton>
-                    <Size>40f,24f</Size>
-                    <ObjectName>GuiToggleButton</ObjectName>
-                    <NumberStates>2</NumberStates>
-                    <State>
-                      <Number>0</Number>
-                      <Text>MUTE</Text>
-                    </State>
-                    <State>
-                      <Number>1</Number>
-                      <Text>MUTE</Text>
-                    </State>
-                    <Connection>
-                      <ConfigKey>[Auxiliary<Variable name="auxnum"/>],mute</ConfigKey>
-                      <ButtonState>LeftButton</ButtonState>
-                    </Connection>
-                  </PushButton>
-                </Children>
-              </WidgetGroup>
+              <Label>
+                <ObjectName>MicSubTitle</ObjectName>
+                <Text>Aux <Variable name="auxnum"/></Text>
+              </Label>
+
               <WidgetGroup>
                 <ObjectName>GuiToggleContainerPadLeft</ObjectName>
                 <Layout>vertical</Layout>
@@ -78,51 +47,43 @@
             </Children>
           </WidgetGroup>
           <WidgetGroup>
-            <Layout>horizontal</Layout>
-            <SizePolicy>min,min</SizePolicy>
-            <Children>
-              <VuMeter>
-                <TooltipId>channel_VuMeter</TooltipId>
-                <MinimumSize>64,4</MinimumSize>
-                <MaximumSize>64,4</MaximumSize>
-                <PathVu>vumeter_latency_over.png</PathVu>
-                <PathBack>vumeter_latency_bg_solid.png</PathBack>
-                <!-- <PathVu>vumeter_latency.svg</PathVu> -->
-                <Horizontal>true</Horizontal>
-                <PeakHoldSize>5</PeakHoldSize>
-                <PeakHoldTime>500</PeakHoldTime>
-                <PeakFallTime>50</PeakFallTime>
-                <PeakFallStep>2</PeakFallStep>
-                <Connection>
-                  <ConfigKey>[Auxiliary<Variable name="auxnum"/>],VuMeter</ConfigKey>
-                </Connection>
-              </VuMeter>
-              <PushButton>
-                <TooltipId>orientation</TooltipId>
-                <Style></Style>
-                <NumberStates>3</NumberStates>
-                <State>
-                  <Number>0</Number>
-                  <Pressed>btn_orientation_microphone_left_over.png</Pressed>
-                  <Unpressed>btn_orientation_microphone_left_over.png</Unpressed>
-                </State>
-                <State>
-                  <Number>1</Number>
-                  <Pressed>btn_orientation_microphone_master.png</Pressed>
-                  <Unpressed>btn_orientation_microphone_master.png</Unpressed>
-                </State>
-                <State>
-                  <Number>2</Number>
-                  <Pressed>btn_orientation_microphone_right_over.png</Pressed>
-                  <Unpressed>btn_orientation_microphone_right_over.png</Unpressed>
-                </State>
-                <Connection>
-                  <ConfigKey>[Auxiliary<Variable name="auxnum"/>],orientation</ConfigKey>
-                  <ButtonState>LeftButton</ButtonState>
-                </Connection>
-              </PushButton>
-            </Children>
+              <Layout>vertical</Layout>
+              <SizePolicy>min,min</SizePolicy>
+              <Children>
+                  <StatusLight>
+                      <TooltipId>preview_PeakIndicator</TooltipId>
+                      <PathStatusLight>btn_clipping_previewdeck_over.png</PathStatusLight>
+                      <PathBack>btn_clipping_previewdeck.png</PathBack>
+                      <Connection>
+                          <ConfigKey>[Auxiliary<Variable name="auxnum"/>],PeakIndicator</ConfigKey>
+                      </Connection>
+                  </StatusLight>
+
+                  <VuMeter>
+                      <TooltipId>Microphone<Variable name="micnum"/>_VuMeter</TooltipId>
+                      <PathVu>btn_volume_display_previewdeck_over.png</PathVu>
+                      <PathBack>btn_volume_display_previewdeck.png</PathBack>
+                      <Horizontal>false</Horizontal>
+                      <PeakHoldSize>3</PeakHoldSize>
+                      <PeakHoldTime>250</PeakHoldTime>
+                      <PeakFallTime>50</PeakFallTime>
+                      <PeakFallStep>3</PeakFallStep>
+                      <Connection>
+                          <ConfigKey>[Auxiliary<Variable name="auxnum"/>],VuMeter</ConfigKey>
+                      </Connection>
+                  </VuMeter>
+              </Children>
           </WidgetGroup>
+
+          <SliderComposed>
+              <TooltipId>pregain</TooltipId>
+              <Handle>knob_volume_previewdeck.png</Handle>
+              <Slider>slider_volume_previewdeck.png</Slider>
+              <Horizontal>false</Horizontal>
+              <Connection>
+                  <ConfigKey>[Auxiliary<Variable name="auxnum"/>],pregain</ConfigKey>
+              </Connection>
+          </SliderComposed>
         </Children>
       </WidgetGroup>
     </Children>

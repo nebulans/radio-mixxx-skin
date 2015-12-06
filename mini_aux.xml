@@ -24,6 +24,12 @@
                     <Template src="skin:microphone.xml">
                         <SetVariable name="micnum">4</SetVariable>
                     </Template>
+                    <Template src="skin:aux_passthrough.xml">
+                        <SetVariable name="auxnum">1</SetVariable>
+                    </Template>
+                    <Template src="skin:aux_passthrough.xml">
+                        <SetVariable name="auxnum">2</SetVariable>
+                    </Template>
                 </Children>
             </WidgetGroup>
         </Children>

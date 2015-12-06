@@ -3,7 +3,7 @@
         <ObjectName>Deck</ObjectName>
         <Layout>horizontal</Layout>
         <SizePolicy>me, min</SizePolicy>
-        <MinimumSize>-1, 220</MinimumSize>
+        <MinimumSize>-1, 170</MinimumSize>
         <Children>
             <!--<Template src="skin:deck_rate.xml" />-->
             <WidgetGroup>  <!-- Deck Channel1 -->

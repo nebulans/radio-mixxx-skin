@@ -8,18 +8,18 @@
             <BackPath>background_tile.png</BackPath>
             <Layout>vertical</Layout>
             <SizePolicy>min,min</SizePolicy>
-            <MinimumSize>100, 64</MinimumSize>
+            <MinimumSize>100, 45</MinimumSize>
             <Children>
-                <Label>
-                    <ObjectName>MicSubTitle</ObjectName>
-                    <Text>Mic <Variable name="mic1hack"/><Variable name="micnum"/></Text>
-                </Label>
                 <!-- To make each widget centered, we have to put them each in their own widgetgroup. -->
                 <WidgetGroup>
                     <Layout>horizontal</Layout>
                     <SizePolicy>min,max</SizePolicy>
                     <MaximumSize>-1, 26</MaximumSize>
                     <Children>
+                        <Label>
+                            <ObjectName>MicSubTitle</ObjectName>
+                            <Text>Mic <Variable name="mic1hack"/><Variable name="micnum"/></Text>
+                        </Label>
                         <Template src="skin:knob_sized_textless.xml">
                             <SetVariable name="width">28</SetVariable>
                             <SetVariable name="height">24</SetVariable>

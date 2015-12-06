@@ -31,7 +31,8 @@
                             </StatusLight>
                         </Children>
                     </WidgetGroup>
-                    <Template src="skin:deck_row_1.xml" />
+                    <!--<Template src="skin:deck_row_1.xml" />-->
+                    <!-- TODO: reinstate hotcue buttons in deck_buttons.xml -->
                     <Template src="skin:deck_row_2_3_4.xml" />
                     <Template src="skin:deck_row_5.xml" />
                     <Template src="skin:deck_buttons.xml" />

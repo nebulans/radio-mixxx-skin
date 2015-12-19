@@ -81,7 +81,7 @@
               <Slider>slider_volume_previewdeck.png</Slider>
               <Horizontal>false</Horizontal>
               <Connection>
-                  <ConfigKey>[Auxiliary<Variable name="auxnum"/>],pregain</ConfigKey>
+                  <ConfigKey>[Auxiliary<Variable name="auxnum"/>],volume</ConfigKey>
               </Connection>
           </SliderComposed>
         </Children>

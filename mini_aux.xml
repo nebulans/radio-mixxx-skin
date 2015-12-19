@@ -13,22 +13,13 @@
                 <MaximumSize>,60</MaximumSize>
                 <Children>
                     <Template src="skin:microphone.xml">
-                        <SetVariable name="mic1hack">1</SetVariable>
+                        <SetVariable name="micnum">1</SetVariable>
                     </Template>
                     <Template src="skin:microphone.xml">
                         <SetVariable name="micnum">2</SetVariable>
                     </Template>
-                    <Template src="skin:microphone.xml">
-                        <SetVariable name="micnum">3</SetVariable>
-                    </Template>
-                    <Template src="skin:microphone.xml">
-                        <SetVariable name="micnum">4</SetVariable>
-                    </Template>
                     <Template src="skin:aux_passthrough.xml">
-                        <SetVariable name="auxnum">1</SetVariable>
-                    </Template>
-                    <Template src="skin:aux_passthrough.xml">
-                        <SetVariable name="auxnum">2</SetVariable>
+                        <SetVariable name="auxnum">4</SetVariable>
                     </Template>
                 </Children>
             </WidgetGroup>

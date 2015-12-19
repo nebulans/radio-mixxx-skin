@@ -32,7 +32,7 @@
                             <PathStatusLight>btn_clipping_previewdeck_over.png</PathStatusLight>
                             <PathBack>btn_clipping_previewdeck.png</PathBack>
                             <Connection>
-                                <ConfigKey>[Microphone<Variable name="micnum"/>],PeakIndicator</ConfigKey>
+                                <ConfigKey>[Auxiliary<Variable name="micnum"/>],PeakIndicator</ConfigKey>
                             </Connection>
                         </StatusLight>
 
@@ -46,7 +46,7 @@
                             <PeakFallTime>50</PeakFallTime>
                             <PeakFallStep>3</PeakFallStep>
                             <Connection>
-                                <ConfigKey>[Microphone<Variable name="micnum"/>],VuMeter</ConfigKey>
+                                <ConfigKey>[Auxiliary<Variable name="micnum"/>],VuMeter</ConfigKey>
                             </Connection>
                         </VuMeter>
                     </Children>
@@ -58,7 +58,7 @@
                     <Slider>slider_volume_previewdeck.png</Slider>
                     <Horizontal>false</Horizontal>
                     <Connection>
-                        <ConfigKey>[Microphone<Variable name="micnum"/>],pregain</ConfigKey>
+                        <ConfigKey>[Auxiliary<Variable name="micnum"/>],volume</ConfigKey>
                     </Connection>
                 </SliderComposed>
             </Children>

@@ -395,16 +395,16 @@
 			<WidgetGroup>
 				<Layout>vertical</Layout>
 				<SizePolicy>min,min</SizePolicy>
-				<ObjectName>SamplerPitch</ObjectName>
+				<ObjectName>SamplerVolume</ObjectName>
 				<MinimumSize>40,</MinimumSize>
 				<Children>
 					<SliderComposed>
-						<TooltipId>rate</TooltipId>
+						<TooltipId>volume</TooltipId>
 						<Handle>knob_pitch_sampler.png</Handle>
 						<Slider>slider_pitch_sampler.png</Slider>
 						<Horizontal>false</Horizontal>
 						<Connection>
-							<ConfigKey>[Sampler<Variable name="samplernum"/>],rate</ConfigKey>
+							<ConfigKey>[Sampler<Variable name="samplernum"/>],volume</ConfigKey>
 						</Connection>
 					</SliderComposed>
 				</Children>

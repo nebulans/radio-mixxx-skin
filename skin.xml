@@ -30,10 +30,10 @@
 <!DOCTYPE skin>
 <skin>
   <manifest>
-    <title>LateNight</title>
-    <author>owilliams</author>
+    <title>RadioNight</title>
+    <author>owilliams, Tim Davies</author>
     <version>1.12.0.01</version>
-    <description>A nighttime-compatible skin</description>
+    <description>A skin for radio use</description>
     <language>en</language>
     <license>Creative Commons Attribution, Share-Alike 3.0 Unported</license>
     <attributes>
@@ -43,19 +43,19 @@
       <attribute persist="true" config_key="[Spinny2],show_spinny">1</attribute>
       <attribute persist="true" config_key="[Spinny3],show_spinny">1</attribute>
       <attribute persist="true" config_key="[Spinny4],show_spinny">1</attribute>
-      <attribute persist="true" config_key="[Microphone],show_microphone">0</attribute>
-      <attribute persist="true" config_key="[MicrophoneRack],show">0</attribute>
+      <attribute persist="true" config_key="[Microphone],show_microphone">1</attribute>
+      <attribute persist="true" config_key="[MicrophoneRack],show">1</attribute>
       <attribute persist="true" config_key="[EffectRack1],show">0</attribute>
-      <attribute persist="true" config_key="[Samplers],show_samplers">0</attribute>
+      <attribute persist="true" config_key="[Samplers],show_samplers">1</attribute>
       <attribute persist="true" config_key="[Vinylcontrol],show_vinylcontrol">0</attribute>
-      <attribute persist="true" config_key="[PreviewDeck],show_previewdeck">0</attribute>
+      <attribute persist="true" config_key="[PreviewDeck],show_previewdeck">1</attribute>
       <attribute persist="true" config_key="[Master],show_mixer">1</attribute>
-      <attribute persist="true" config_key="[Master],show_eqs">1</attribute>
-      <attribute persist="true" config_key="[Master],show_mics">0</attribute>
+      <attribute persist="true" config_key="[Master],show_eqs">0</attribute>
+      <attribute persist="true" config_key="[Master],show_mics">1</attribute>
       <attribute persist="true" config_key="[Master],view_curpage">2</attribute>
-      <attribute persist="true" config_key="[Library],show_coverart">1</attribute>
+      <attribute persist="true" config_key="[Library],show_coverart">0</attribute>
       <attribute persist="true" config_key="[Library],show_current">1</attribute>
-      <attribute persist="true" config_key="[Master],show_4decks">0</attribute>
+      <attribute persist="true" config_key="[Master],show_4decks">1</attribute>
       <attribute persist="true" config_key="[Spinny],show_spinnies">1</attribute>
       <attribute config_key="[Library],show_library">1</attribute>
       <attribute config_key="[Master],maximize_library">0</attribute>
